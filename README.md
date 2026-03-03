@@ -1,5 +1,5 @@
-# moodboard-fullstack
-MoodBoard – Fullstack CRUD Application (React + Node.js + Express)
+#### moodboard-fullstack
+### MoodBoard – Fullstack CRUD Application (React + Node.js + Express)
 
 MoodBoard é uma aplicação fullstack simples para registrar e acompanhar estados de humor diários.
 
@@ -7,7 +7,7 @@ O projeto foi desenvolvido com React no frontend e Node.js + Express no backend,
 
 ### Sobre o Projeto
 
-## O objetivo da aplicação é permitir ao usuário:
+### O objetivo da aplicação é permitir ao usuário:
 
   - Registrar como está se sentindo;
 
@@ -17,7 +17,7 @@ O projeto foi desenvolvido com React no frontend e Node.js + Express no backend,
 
   - Remover registros;
 
-## Este projeto foi criado com foco em prática de:
+### Este projeto foi criado com foco em prática de:
 
   - CRUD completo
 
@@ -29,7 +29,7 @@ O projeto foi desenvolvido com React no frontend e Node.js + Express no backend,
 
 ### Tecnologias Utilizadas
 
-## Frontend
+Frontend
 
   - React
 
@@ -39,7 +39,7 @@ O projeto foi desenvolvido com React no frontend e Node.js + Express no backend,
 
   - Fetch API
 
-## Backend
+Backend
 
 - Node.js
 
@@ -83,7 +83,7 @@ moodboard-fullstack
 
 ### Como Rodar o Projeto
 
-## 1️⃣ Backend
+1️⃣ Backend
 
 Dentro da pasta `mood-api`:
 
@@ -95,9 +95,9 @@ node server.js
 
 O servidor rodará em: http://localhost:3000
 
-## 2️⃣ Frontend
+2️⃣ Frontend
 
-### Dentro da pasta do frontend:
+Dentro da pasta do frontend:
 
 npm install
 
@@ -107,11 +107,11 @@ A aplicação rodará em: http://localhost:5173
 
 ### Endpoints da API
 
-## GET /moods
+GET /moods
 
 Retorna todos os registros de humor.
 
-## POST /moods
+POST /moods
 
 Cria um novo registro.
 
@@ -123,14 +123,14 @@ Cria um novo registro.
 
 }
 
-## DELETE /moods/:id
+DELETE /moods/:id
 
 Remove um registro pelo ID.
 
-## 📷 Screenshot
+### 📷 Screenshot
 
 (Adicionar aqui uma imagem da interface depois que finalizar o layout)
 
-Melhorias Futuras
+### Melhorias Futuras
 
 Persistência em banco de dados (MongoDB ou PostgreSQL)
