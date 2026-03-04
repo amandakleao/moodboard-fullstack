@@ -74,6 +74,7 @@ Vite proxy para desenvolvimento (/api → backend)
 
 #### Como Rodar o Projeto
 1️⃣ Backend
+
 Dentro da pasta mood-backend:
 ```txt
 npm install
@@ -84,6 +85,7 @@ O servidor rodará em:
 👉 http://localhost:3000
 
 2️⃣ Frontend
+
 Dentro da pasta mood-frontend:
 
 ```txt
