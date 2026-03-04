@@ -55,7 +55,8 @@ Vite proxy para desenvolvimento (/api → backend)
 
 #### Estrutura do Projeto
 
-moodboard-fullstack
+##### moodboard-fullstack
+```txt
 │
 ├── mood-backend/          # Backend (Node + Express)
 │   ├── server.js
@@ -69,13 +70,15 @@ moodboard-fullstack
     │       └── api.js
     ├── vite.config.js
     └── package.json
-
+```
 
 #### Como Rodar o Projeto
 1️⃣ Backend
 Dentro da pasta mood-backend:
-
-npm install | node server.js
+```txt
+npm install
+node server.js
+```
 
 O servidor rodará em:
 👉 http://localhost:3000
@@ -83,7 +86,10 @@ O servidor rodará em:
 2️⃣ Frontend
 Dentro da pasta mood-frontend:
 
-npm install | npm run dev
+```txt
+npm install
+npm run dev
+```
 
 A aplicação rodará em:
 👉 http://localhost:5173
@@ -95,16 +101,20 @@ Se estiver usando proxy do Vite (recomendado), as rotas estarão acessíveis por
 
 #### Endpoints da API
 
-GET /cards
+###### GET /cards
+
 Retorna todos os registros de humor.
 
-POST /cards
+###### POST /cards
+
 Cria um novo registro.
 
-Exemplo de body:
+###### Exemplo de body:
+
 JSON{  "titulo": "Hoje o dia foi produtivo"}
 
-DELETE /cards/:id
+###### DELETE /cards/:id
+
 Remove um registro pelo ID.
 
 ##### 📷 Prévia da Interface
@@ -115,8 +125,12 @@ Remove um registro pelo ID.
 ##### Melhorias Futuras
 
 Persistência em banco de dados (SQLite, PostgreSQL ou MongoDB);
+
 Edição de cards (PUT /cards/:id);
+
 Autenticação (login);
+
 Filtro e pesquisa de moods;
+
 Exportar histórico.
 
