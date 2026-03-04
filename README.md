@@ -1,136 +1,138 @@
-#### moodboard-fullstack
+##### moodboard-fullstack
 ### MoodBoard – Fullstack CRUD Application (React + Node.js + Express)
 
-MoodBoard é uma aplicação fullstack simples para registrar e acompanhar estados de humor diários.
+MoodBoard é uma aplicação fullstack desenvolvida para registrar, visualizar e gerenciar registros de humor diários.
+O projeto utiliza React + Vite no frontend e Node.js + Express no backend, com comunicação via API REST.
 
-O projeto foi desenvolvido com React no frontend e Node.js + Express no backend, com comunicação via API REST.
+#### Sobre o Projeto
+O objetivo da aplicação é permitir ao usuário:
 
-### Sobre o Projeto
+Registrar como está se sentindo no dia
+Visualizar todos os cards criados
+Abrir cada card em uma pré-visualização modal
+Excluir um registro individual
+Alternar a aparência da barra superior entre tema claro e escuro
 
-### O objetivo da aplicação é permitir ao usuário:
+Este projeto foi criado com foco em prática de:
 
-  - Registrar como está se sentindo;
+CRUD completo (Create, Read, Delete)
+Comunicação entre frontend e backend
+Estados e eventos no React
+Estruturação de API REST
+Modularização e organização de código
 
-  - Escolher um emoji representando o humor;
 
-  - Visualizar histórico de registros;
-
-  - Remover registros;
-
-### Este projeto foi criado com foco em prática de:
-
-  - CRUD completo
-
-  - Comunicação entre frontend e backend
-
-  - Gerenciamento de estado no React
-
-  - Estruturação básica de API REST
-
-### Tecnologias Utilizadas
-
+#### Tecnologias Utilizadas
 Frontend
 
-  - React
-
-  - Vite
-
-  - JavaScript (ES6+)
-
-  - Fetch API
+React
+Vite
+JavaScript (ES6+)
+Fetch API
+CSS puro (layout customizado)
+Ambiente de desenvolvimento com proxy (para evitar CORS)
 
 Backend
 
-- Node.js
+Node.js
+Express
+CORS
+JSON middleware (express.json())
 
-- Express
 
-- CORS
+#### Conceitos Aplicados
 
-- JSON middleware
+Componentização no React
+Hooks: useState, useEffect
+Requisições HTTP (GET, POST, DELETE)
+Manipulação de arrays (map, filter)
+Estrutura REST com rotas organizadas
+Modal de pré‑visualização
+Estado global local para cards
+Uso de ambiente .env no frontend (VITE_API_BASE)
+Vite proxy para desenvolvimento (/api → backend)
 
-### Conceitos Aplicados
 
-- Componentização
+#### Estrutura do Projeto
 
-- useState
-
-- useEffect
-
-- Requisições HTTP (GET, POST, DELETE)
-
-- Manipulação de arrays (map, filter, spread operator)
-
-- Estrutura REST
-
-### Estrutura do Projeto
-
-moodboard-fullstack
-
+##### moodboard-fullstack
+```txt
 │
-
-├── mood-api (backend)
-
-│ └── server.js
-
+├── mood-backend/          # Backend (Node + Express)
+│   ├── server.js
+│   └── package.json
 │
+└── mood-frontend/         # Frontend (React + Vite)
+    ├── src/
+    │   ├── App.jsx
+    │   ├── App.css
+    │   └── services/
+    │       └── api.js
+    ├── vite.config.js
+    └── package.json
+```
 
-└── mood-frontend (frontend)
-
-└── src
-
-└── App.jsx
-
-### Como Rodar o Projeto
-
+#### Como Rodar o Projeto
 1️⃣ Backend
 
-Dentro da pasta `mood-api`:
-
-bash
-
+Dentro da pasta mood-backend:
+```txt
 npm install
-
 node server.js
+```
 
-O servidor rodará em: http://localhost:3000
+O servidor rodará em:
+👉 http://localhost:3000
 
 2️⃣ Frontend
 
-Dentro da pasta do frontend:
+Dentro da pasta mood-frontend:
 
+```txt
 npm install
-
 npm run dev
+```
 
-A aplicação rodará em: http://localhost:5173
+A aplicação rodará em:
+👉 http://localhost:5173
 
-### Endpoints da API
+Se estiver usando proxy do Vite (recomendado), as rotas estarão acessíveis por:
 
-GET /moods
+/api/cards
+
+
+#### Endpoints da API
+
+###### GET /cards
 
 Retorna todos os registros de humor.
 
-POST /moods
+###### POST /cards
 
 Cria um novo registro.
 
-{
+###### Exemplo de body:
 
-  "text": "Hoje estou produtiva",
+JSON{  "titulo": "Hoje o dia foi produtivo"}
 
-  "emoji": "💻"
-
-}
-
-DELETE /moods/:id
+###### DELETE /cards/:id
 
 Remove um registro pelo ID.
 
-### 📷 Screenshot
+##### 📷 Prévia da Interface
+<img width="1862" height="945" alt="image" src="https://github.com/user-attachments/assets/01beb935-f452-413f-a6bb-8d9f8115f051" />
 
-(Adicionar aqui uma imagem da interface depois que finalizar o layout)
 
-### Melhorias Futuras
 
-Persistência em banco de dados (MongoDB ou PostgreSQL)
+##### Melhorias Futuras
+
+Persistência em banco de dados (SQLite, PostgreSQL ou MongoDB);
+
+Edição de cards (PUT /cards/:id);
+
+Autenticação (login);
+
+Filtro e pesquisa de moods;
+
+Exportar histórico.
+
