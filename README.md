@@ -121,8 +121,7 @@ Remove um registro pelo ID.
 
 ##### 📷 Prévia da Interface
 <img width="1862" height="945" alt="image" src="https://github.com/user-attachments/assets/01beb935-f452-413f-a6bb-8d9f8115f051" />
-
-
+<img width="1879" height="953" alt="image" src="https://github.com/user-attachments/assets/210b6b46-1fdc-420a-a467-02e28c994259" />
 
 ##### Melhorias Futuras
 
